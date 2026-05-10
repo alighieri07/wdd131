@@ -2,12 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mi sitio WDD131</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/scripts.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Dynamic Web Fundamentals - Alighieri Vergara</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals course landing page for Alighieri Vergara. Learn web development with HTML, CSS, and JavaScript fundamentals.">
+  <meta name="author" content="Alighieri Vergara">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-  <h1>Bienvenido</h1>
-  <p>Este es mi primer proyecto.</p>
+  <header>
+    <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+  
+    <nav>
+      <a href="https://www.linkedin.com">LinkedIn</a>
+      <a href="https://byupw.instructure.com/">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Alighieri Vergara</h1>
+    <section class="card">
+      <h2>About Me</h2>
+      <p>Hi! I'm Alighieri, a student in the WDD 131 - Dynamic Web Fundamentals course. I'm passionate about web development and eager to learn more about HTML, CSS, and JavaScript. I enjoy creating interactive and user-friendly websites that provide a great user experience.</p>
+      <img src="images/profile.jpg" alt="Profile picture of Alighieri Vergara">
+    </section>
+    <section class="card">
+      <h2>My work</h2>
+      <p> I'm a chilean lawyer trying to learn software development to better serve my clients.</p>
+      <img src="images/tech-law.webp" alt="Technology and law">
+    </section>
+              
+        
+  
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Alighieri Vergara, Chile</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
-</html>
