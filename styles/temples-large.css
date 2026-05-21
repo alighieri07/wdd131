@@ -1,0 +1,79 @@
+/* Large Screen Responsive Design */
+
+@media (min-width: 768px) {
+    /* Hide hamburger menu on larger screens */
+    #menu-button {
+        display: none;
+    }
+
+    /* Show navigation horizontally */
+    nav {
+        position: static;
+        background-color: transparent;
+        display: block !important;
+        width: auto;
+        border-top: none;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 0;
+    }
+
+    nav a {
+        border-bottom: none;
+        padding: 0.5rem 1.5rem;
+        border-bottom: 3px solid transparent;
+        transition: border-bottom-color 0.3s ease, background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: transparent;
+        border-bottom-color: var(--accent-color);
+        padding-left: 1.5rem;
+    }
+
+    /* Grid layout for figures */
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Three column layout on larger screens */
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    main {
+        padding: 0 2rem;
+    }
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
