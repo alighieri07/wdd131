@@ -1,7 +1,6 @@
 /* Large Screen Responsive Design */
 
 @media (min-width: 768px) {
-    /* Hide hamburger menu on larger screens */
     #menu-button {
         display: none;
     }
