@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chile - A Place to Visit</title>
+  <meta name="description" content="Discover Chile, a stunning country in South America.">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Chile</h1>
+    <p>Land of Contrasts</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="images/chile-large.webp">
+        <img
+          src="images/chile-small.webp"
+          alt="Patagonia landscape in Chile with mountains and lake"
+          width="800"
+          height="500">
+      </picture>
+    </section>
+
+    <section class="description">
+      <h2>About Chile</h2>
+      <p>
+        Chile is a long, narrow country stretching along the western edge of South America.
+        It is home to some of the world's most diverse landscapes, from the driest desert on
+        Earth in the north — the Atacama — to the lush forests and glaciers of Patagonia in
+        the south. Chile's vibrant culture, world-class wine, and warm people make it one of
+        the most fascinating destinations in the world.
+      </p>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <div class="weather-icon-mobile">
+        <img src="images/partly-cloudy.svg" alt="Partly cloudy weather icon">
+      </div>
+      <div class="weather-details">
+        <p>Location: Santiago, Chile</p>
+        <p>Temperature: <span id="temp">15°C</span></p>
+        <p>Wind Speed: <span id="wind">30 km/h</span></p>
+        <p>Wind Chill: <span id="wind-chill"></span></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> | Chile Travel Guide</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+  </footer>
+
+</body>
+</html>
